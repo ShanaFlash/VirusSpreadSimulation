@@ -14,7 +14,7 @@ public class VirusSpreadSimulation {
         int[] computers = new int[numComputers]; // 0: uninfected, 1: infected
         Random random = new Random();
 
-        while (countInfectedComputers(computers) < numComputers && simulationDays < 1000) {
+        while (countInfectedComputers(computers) < numComputers && simulationDays < 10000) {
             // Spread the virus
             for (int i = 0; i < numComputers; i++) {
                 if (computers[i] == 1) { // Infected computer
